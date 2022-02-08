@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Order summary card</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+        
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+        
+        body {
+            background-image: url("./images/pattern-background-desktop.svg");
+            font-family: 'Red Hat Display', sans-serif;
+            min-width: 390px;
+        }
+        
+        .order {
+            border-radius: 15px;
+            background-color: white;
+            width: 450px;
+            margin: auto;
+            box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.082);
+        }
+        
+        .summary {
+            text-align: center;
+            font-weight: 900;
+            font-size: 25px;
+            color: hsl(223, 47%, 23%);
+        }
+        
+        .paragraph1 {
+            text-align: center;
+            font-weight: 500;
+            font-size: 16px;
+            color: hsl(224, 23%, 55%);
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-bottom: 20px;
+        }
+        
+        section {
+            display: flex;
+            margin: auto;
+            width: fit-content;
+        }
+        
+        .button {
+            background-color: hsl(245, 75%, 52%);
+            color: white;
+            display: block;
+            width: calc(100% - 100px);
+            margin: auto;
+            text-align: center;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 20px 10px hsla(245, 75%, 52%, 0.13);
+            text-decoration: none;
+            margin-bottom: 30px;
+        }
+        
+        a:hover {
+            color: hsl(245, 70%, 58%);
+            text-decoration: none;
+        }
+        
+        .button:hover {
+            background-color: hsl(245, 70%, 58%);
+            color: white;
+        }
+        
+        .cancel {
+            color: hsl(224, 23%, 55%);
+            text-decoration: none;
+            font-weight: 700;
+        }
+        
+        .cancel:hover {
+            font-weight: 900;
+            color: hsl(223, 47%, 23%);
+        }
+        
+        @media only screen and (max-width: 700px) {
+            body {
+                background-image: url("./images/pattern-background-mobile.svg");
+            }
+            .order {
+                width: 90%;
+            }
+            .hero {
+                width: 100%;
+            }
+            .summary {
+                font-size: 7vw;
+            }
+            .paragraph1 {
+                font-size: 4vw;
+            }
+            .button {
+                display: block;
+                width: 80%;
+            }
+        }
+        
+        @media only screen and (min-height: 700px) {
+            .order {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        .closea {
+            position: fixed;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        
+        .closea:hover,
+        .closea:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="../index.html"><span class="closea">&times;</span></a>
+    <div class="order">
+        <img src="./images/illustration-hero.svg" alt="Hero" style="border-top-left-radius: 15px;border-top-right-radius: 15px;" class="hero">
+        <p class="summary">Order Summary</p>
+        <p class="paragraph1">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+        <section style="width: calc(100% - 100px);padding-bottom: 20px"><img src="./images/icon-music.svg">
+            <table style="width: 100%;padding-left: 15px;padding-right: 1px;">
+                <tr>
+                    <td style="color:hsl(223, 47%, 23%);font-weight: 900;">Annual Plan</td>
+                    <td rowspan="2" style="text-align: right;"><a href="#" style="font-weight: 700;">Change</a></td>
+                </tr>
+                <tr>
+                    <td style="color: hsl(224, 23%, 55%);">$59.99/year</td>
+                </tr>
+            </table>
+        </section>
+        <p><a href="#" class="button">Proceed to Payment</a></p>
+        <p style="text-align: center;padding-bottom: 50px;"><a href="# " class="cancel">Cancel Order</a></p>
+    </div>
+</body>
+
+</html>

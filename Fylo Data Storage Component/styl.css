@@ -1,0 +1,139 @@
+body {
+    height: 100%;
+    background-image: url("./images/bg-desktop.png");
+    background-repeat: no-repeat;
+    background-size: 100vw 50vh;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-color: hsl(229, 57%, 11%);
+}
+
+.data {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: flex-end;
+    column-gap: 25px;
+}
+
+.menu {
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 10px;
+    border-top-right-radius: 100px;
+    padding: 40px;
+}
+
+.icons{
+    display: flex;
+    justify-content: flex-start;
+    width: fit-content;
+    margin-top: 20px;
+    column-gap: 15px;
+}
+
+.icon{
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 10px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons img{
+    padding: 10px;
+    margin: auto;
+}
+
+.content{
+    background-color: hsl(228, 56%, 26%);
+    width: 600px;
+    height: 60%;
+}
+
+.progress-bar { 
+    height: 15px;
+    position: relative;
+    background: hsl(229, 57%, 11%);
+    border-radius: 25px;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+}
+
+.progress-bar img{
+    color: white;
+    font-size: 40px;
+    height: 100%;
+}
+
+.dot {
+    height: 80%;
+    aspect-ratio: 1 / 1;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: -13.5px;
+    z-index: 2;
+
+}
+
+.progress-bar > span {
+    display: block;
+    height: 100%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%) , hsl(335, 100%, 65%));
+    position: relative;
+    overflow: hidden;
+}
+
+.bubble {
+    position: relative;
+    background: #ffffff;
+    color: black;
+    font-family: Arial;
+    font-size: 20px;
+    line-height: 120px;
+    text-align: center;
+    width: 150px;
+    height: 70px;
+    border-radius: 10px;
+    border-bottom-right-radius: 0px;
+    padding: 0px;
+}
+.bubble:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    z-index: 1;
+    border-style: solid;
+    border-width: 0 20px 20px 0;
+    border-color: transparent #ffffff transparent transparent;
+    bottom: -20px;
+    left: 93.2%;
+    margin-left: -10px;
+}
+
+.closea {
+    position: fixed;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.closea:hover,
+.closea:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
