@@ -1,0 +1,118 @@
+.gallery{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
+    gap: 25px;
+}
+
+.gallery a{
+    text-decoration: none;
+}
+
+.gallery a:active{
+    text-decoration: none;
+    color: black;
+}
+
+.gallery a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+.gallery a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+.item{
+    max-width: 30%;
+    min-width: 310px;
+    background-color: var(--card);
+    border: 2px solid black;
+    border-radius: 1rem;
+}
+
+.item h3{
+    text-align:center;
+    font-size: 30px;
+    color: black;
+    margin-top: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.item p{
+    font-size: 0.7rem;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: rgb(77, 77, 77);
+    font-family: 'Heebo', sans-serif;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.itemimg{
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.5rem;
+    transition: transform .5s ease, box-shadow .5s ease;
+    -webkit-box-shadow: 0px 0px 16px -1px rgba(66, 68, 90, 0.5);
+    -moz-box-shadow: 0px 0px 16px -1px rgba(66, 68, 90, 0.5);
+    box-shadow: 0px 0px 16px -1px rgba(66, 68, 90, 0.5);
+}
+
+.itemimg:hover{
+    -webkit-box-shadow: 5px 5px 32px 1px rgba(66, 68, 90, 0.9);
+    -moz-box-shadow: 5px 5px 32px 1px rgba(66, 68, 90, 0.9);
+    box-shadow: 5px 5px 32px 1px rgba(66, 68, 90, 0.9);
+    transform: scale(1.1);
+}
+
+.img img:hover{
+    -webkit-box-shadow: 5px 5px 32px 1px rgba(66, 68, 90, 0.59);
+    -moz-box-shadow: 5px 5px 32px 1px rgba(66, 68, 90, 0.59);
+    box-shadow: 5px 5px 32px 1px rgba(66, 68, 90, 0.59);
+}
+
+.item-lang{
+    width: 100%;
+    padding: 0.5rem 0rem 0rem;
+}
+
+.item-lang-ul{
+    display: inline-flex;
+    column-gap: 0.3rem;
+    margin: 0px;
+    list-style: none;
+    font-family: 'Barlow', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.item-lang-html{
+    color: rgb(106, 190, 205);
+}
+
+.item-lang-css{
+    color: rgb(62, 84, 163);
+}
+
+.item-lang-js{
+    color: rgb(207, 99, 144);
+}
+
+@media (min-width: 300px) and (max-width: 690px){
+    .item{
+        max-width: 90%;
+    }
+}
+
+@media (min-width: 690px) and (max-width: 999px){
+    .item{
+        max-width: 40%;
+    }
+}
+

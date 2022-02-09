@@ -2,7 +2,7 @@
     --body: white;
     --card: #f2f1f7;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;400&display=swap');
 
 html,
@@ -66,71 +66,7 @@ body {
     text-align: center;
 }
 
-.gallery a{
-    text-decoration: none;
-}
 
-.gallery a:active{
-    text-decoration: none;
-    color: black;
-}
-
-.gallery a:visited{
-    text-decoration: none;
-    color: black;
-}
-
-.gallery a:hover{
-    text-decoration: underline;
-    color: black;
-}
-
-.gallery{
-    margin-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: stretch;
-    gap: 20px;
-}
-
-.item{
-    max-width: 30%;
-    min-width: 270px;
-    background-color: var(--card);
-    border: 2px solid black;
-    border-radius: 1vw;
-}
-
-.item h3{
-    text-align:center;
-    font-size: 30px;
-    color: black;
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
-
-.item p{
-    font-size: 15px;
-    padding-left: 40px;
-    color: rgb(77, 77, 77);
-    font-family: 'Heebo', sans-serif;
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
-
-.item img{
-    width: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 0.5vw;
-    transition: transform .5s ease;
-}
-
-.item img:hover{
-    transform: scale(1.1);
-}
 
 .wysokosc{
     height: 400px;
