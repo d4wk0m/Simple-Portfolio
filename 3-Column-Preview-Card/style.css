@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+body{
+    background-color: hsl(0, 0%, 95%);
+    min-width: 300px;
+}
+
+.card{
+    display: flex;
+    width: 60%;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: width 0.5s; 
+    min-width: 300px;
+}
+
+.card:hover{
+    width: 65%;
+}
+
+.section{
+    width: 33%;
+    transition: width 0.5s; 
+    font-size: 1.5vw;
+    overflow: hidden;
+    padding: 50px;
+}
+
+.section h2{
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    margin-top: 40px;
+    font-size: 40px;
+}
+
+.section p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.section:hover{
+    width: 50%;
+}
+
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+}
+
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+}
+
+.sedans span{
+    color: hsl(31, 77%, 52%);
+}
+
+.suvs span{
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury span{
+    color: hsl(179, 100%, 13%);
+}
+
+.section a{
+    text-decoration: none;
+}
+
+.button{
+    background-color: white;
+    border-radius: 5vw;
+    padding: 10px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    position: absolute;
+    bottom: 10%;
+    border: 2px solid white;
+}
+
+.button:hover{
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.attribution{ 
+    margin: auto;
+    text-align: center;
+    font-size: 14px;
+    color: black;
+}
+.attribution a{ 
+    color: rgb(100, 100, 100); 
+    text-decoration: none;
+}
+
+.attribution a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+@media only screen and (max-width: 400px) {
+    .card {
+        width: 95%;
+        flex-wrap: wrap;
+        overflow: visible;
+    }
+
+    .card:hover {
+        width: 95%;
+    }
+
+    .section{
+        width: 100%;
+        font-size: 5vw;
+        height: 350px;
+    }
+
+    .sedans{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .luxury{
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .section:hover{
+        width: 100%;
+    }
+
+    .button{
+        position: relative;
+        bottom: -65px;
+    }
+
+    .attribution{
+        display: none;
+    }
+}
+
+
+
+@media only screen and (min-width: 400px) and (max-width: 600px){
+    .card {
+        width: 95%;
+        flex-wrap: wrap;
+        overflow: visible;
+    }
+
+    .card:hover {
+        width: 95%;
+    }
+
+    .section{
+        width: 100%;
+        font-size: 4vw;
+        height: 350px;
+    }
+
+    .sedans{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .luxury{
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .section:hover{
+        width: 100%;
+    }
+
+    .button{
+        position: relative;
+        bottom: -65px;
+    }
+    .attribution{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .card {
+        width: 90%;
+        height: 350px;
+        flex-wrap: nowrap;
+    }
+
+    .card:hover {
+        width: 95%;
+    }
+
+    .section:hover{
+        width: 40%;
+    }
+
+    .section{
+        padding: 25px;
+    }
+
+    .section h2{
+        margin-top: 20px;
+    }
+
+    .section p{
+        font-size: 1.5vw;
+        margin-top: -10px;
+    }
+
+    .attribution{
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .card {
+        width: 80%;
+        height: 400px;
+    }
+
+    .card:hover {
+        width: 83%;
+    }
+
+    .section:hover{
+        width: 40%;
+    }
+
+    .section h2{
+        margin-top: 20px;
+    }
+
+    .section p{
+        font-size: 1.3vw;
+        margin-top: -10px;
+    }
+
+    .attribution{
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .card {
+        width: 60%;
+    }
+
+    .card:hover {
+        width: 65%;
+    }
+
+    .section p{
+        font-size: 1.3vw;
+    }
+}
+
+.closea {
+    position: fixed;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.closea:hover,
+.closea:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
